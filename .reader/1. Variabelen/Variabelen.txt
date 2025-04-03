@@ -1,70 +1,95 @@
-1. Wat is een array?
-    Een array is een 'complex' data type en kan gezien worden als een geordende verzameling, meestal bestaande uit elementen van
-    één data type. Arrays worden veel gebruikt in programmeercode. De elementen in een array kunnen worden opgevraagd via hun index (positie).
+﻿1. Wat is een variabelen?
+   Een variabele is 'data' waaraan een bepaald label (naam) is gegeven. Door deze data te labelen kunnen
+   we de data oproepen en overschrijven door middel van het label. Hierdoor hoeven we tijdens het programmeren niet te
+   coderen over x, y en z maar kunnen we dingen concreet benoemen.
 
-    Voorbeeld:
-        Een lege array.
-            """
-                empty = []
-            """
+2. Het definiëren van een variabelen.
+   Het definiëren van variabelen is in Python, en in veel andere talen, heel eenvoudig en ziet er als volgt uit:
+   <label> = <data>. Het label (naam) heeft als voorwaarde dat het begint met een letter of een laag streepje(_). Het
+   is gelijk aan teken (=) wordt gebruikt om aan te geven dat het label een bepaalde waarde krijgt.
 
-        Een array met data.
-            """
-                numbers = [1, 2, 3, 4, 5]
-            """
+   Voorbeeld:
+       Variabelen declareren.
+           """
+               Leeftijd = 19
+               geslacht = "Man"
+               _gewicht = 75.4
+           """
 
-2. Index
-    Een index is een getal dat de positie van een element binnen een array aangeeft. De index begint bij 0 (*zero-based indexing*) en
-    verhoogt met 1 voor elk volgend element. De hoogst mogelijke index is altijd:
-    "(aantal elementen in de array - 1)".
+   2.1. Het oproepen en gebruiken van variabelen.
+       Doordat we onze data labels hebben gegeven kunnen we nu deze labels gebruiken om de data aan te roepen die
+       hierbij hoort.
 
-    Dit betekent dat:
-        - Het eerste element index 0 heeft
-        - Het tweede element index 1 heeft
-        - Enzovoort
+       Zoals te zien in het voorbeeld wordt bij de laatste opdracht 'print(x+y)' 'x' en 'y' bij elkaar
+       opgeteld en uitgeprint.
 
-    Voorbeeld:
-        Een array waar de elementen overeenkomen met hun index:
-            """
-                index_array = [0, 1, 2, 3, 4]
-            """
+       Voorbeeld:
+           Variabelen declareren en printen.
+               """
+                   x = 2
+                   y = 4
 
-    2.1 Index gebruiken om data op te halen
-        Elementen worden opgevraagd met: <array>[<index>]. Voorbeeld:
-            """
-                data = [1, 2]
+                   print(x)
+                   print(y)
+                   print(x+y)
+               """
 
-                waarde_op_0 = data[0]  # Resultaat: 1
-                waarde_op_1 = data[1]  # Resultaat: 2
-            """
+   2.2. De leesbaarheid van jouw code.
+       De geschreven code 'moet' een omschrijving zijn van een probleem wat wordt opgelost door jou code. Zoals in
+       het onderstaande voorbeeld te zien is, is de abstracte code vrij duidelijk qua wat er gebeurd. 'y' is de uitkomst
+       van 'x' maal 'z', maar het is totaal niet duidelijk welk probleem deze code oplost. We kunnen ons zelfs afvragen
+       of de code überhaupt wel nodig is... Maar, als we kijken naar de concrete code zien we dat hier een bepaald
+       probleem wordt opgelost: 'het uitrekenen van de totaalprijs voor een aantal appels'.
 
-    2.2 Index gebruiken om data te overschrijven
-        Elementen worden overschreven met: <array>[<index>] = <nieuwe_waarde>. Voorbeeld:
-            """
-                data = [1, 2]
+       voorbeeld:
+           Abstracte code:
+               """
+                   x=5
+                   z=1
 
-                data[0] = 3       # Nieuwe array: [3, 2]
-                data[1] = data[0] # Nieuwe array: [3, 3]
-            """
+                   y = x*z
+               """
+           Concrete code:
+               """
+                   Appels = 5
+                   PrijsPerAppel = 1
 
-3. Belangrijke methodes van een array
-    Methodes zijn functies die specifiek zijn voor een data type. Ze worden aangeroepen via de syntax: <variabele>.<methode>(<input>).
+                   TotaalPrijs = Appels * PrijsPerAppel
+               """
 
-    3.1 Toevoegen aan einde
-        .append(<data>)
-            Voegt een element toe aan het einde van de array.
-            Voorbeeld:
-                """
-                    array = []
-                    array.append(1)  # [1]
-                    array.append(2)  # [1, 2]
-                """
+       Ondanks het feit dat we concrete code willen schrijven zullen we tijdens de lessen veel, niet altijd, gebruik
+       maken van een abstracte manier van code schrijven. Dit komt doordat de kennis die we opdoen op van alles
+       toepasbaar is. De context van een probleem voorziet je vaak in de naamgeving van je variabelen.
 
-    3.2 Verwijderen op waarde
-        .remove(<data>)
-            Verwijdert het *eerste* element met de opgegeven waarde.
-            Voorbeeld:
-                """
-                    array = [1, 2]
-                    array.remove(2)  # [1]
-                """
+
+3. De verschillende type variabelen.
+   Variabelen komen in allerlei soorten en maten voor, later zullen we hier meer aandacht aan besteden.
+   Maar voor nu richten we ons op de basis types die, vrijwel, elke programmeertaal ons geeft. Dit zijn als het ware de
+   bouwstenen waarmee we onze programma's creëren.
+
+   Boolean
+       De boolean is een data type wat binair is, dit betekend dat het één van twee vormen kan hebben. Bij het
+       programmeren zijn deze vormen 'True' (Waar) en 'False' (Onwaar).
+       Voorbeelden: True en False.
+   Integer
+       Een integer is een data type voor hele getallen.
+       Voorbeelden: 1, 24555, -1 en -24555
+
+   Float
+       De float is een data type voor kommagetallen.
+       Voorbeelden: 1.1, 234.555, -1.1 en -245.321
+       Let op: Bij het programmeren wordt de "."  gebruikt als komma.
+
+   String
+       Een string is een data type wat gebruikt wordt voor text.
+       Voorbeelden: "hoi", "text en nog meer text", "2+2" en "133t"
+       Let op: Alles wat tussen aanhalingstekens staat is een string.
+
+4. Wanneer en hoeveel variabelen?
+   Een variabelen creeër je als programmeur wanneer je data wilt opslaan en hergebruiken. Er zijn verder geen regels
+   omtrent het maken/gebruiken van variabelen. We kunnen hooguit kijken of een variabelen "handig" is.
+
+   De hoeveelheid variabelen die je kunt gebruiken is "oneindig", de enigste regels is dat je computer genoeg geheugen
+   moet hebben. De computers die wij tegenwoordig gebruiken hebben meerdere gigabytes aan geheugen. Als we kijken naar
+   een boolean die één bit gebruikt tegenover de +/- 1.000.000.000 bits (1GB aan ram geheugen) hoeven wij niet bang te
+   zijn dat onze kleine programma's ons geheugen zullen volmaken.
