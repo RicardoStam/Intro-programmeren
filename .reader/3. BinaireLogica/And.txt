@@ -1,0 +1,20 @@
+1. Wat is een and (operator)?
+   De and (Nld: en) operator heeft als input twee booleans. Wanneer beide inputs, input 1 EN input 2, True zijn is de
+   output ook True anders is dit False.
+
+2. And truth tabel.
+   Regel: Output is True wanneer Input 1 en Input 2 gelijk zijn aan True. Anders is de output False.
+
+   ----------------------------
+   |Input 1 | Input 2| Output |
+   |--------|--------|--------|
+   |  True  |  True  |  True  |
+   |  True  |  False |  False |
+   |  False |  True  |  False |
+   |  False |  False |  False |
+   ----------------------------
+
+3. Snel beredeneren.
+   Wanneer we kijken naar de And truth tabel vallen twee dingen op:
+       1. Wanneer de eerste input 'True' is, is de output gelijk aan de tweede input.
+       2. Wanneer de eerste input 'False' is, is de output gelijk aan de eerste input.

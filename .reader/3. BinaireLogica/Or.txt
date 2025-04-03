@@ -1,0 +1,20 @@
+1. Wat is een or (operator)?
+   De or (Nld: of) operator heeft als input twee booleans. Wanneer beide of één van de twee, input één OF input twee,
+   True is dan is de output ook True anders is dit False.
+
+2. And truth tabel.
+   Regel: De output is False wanneer Input 1 en Input 2 gelijk zijn aan False. Anders is de output gelijk aan True.
+
+   ----------------------------
+   |Input 1 | Input 2| Output |
+   |--------|--------|--------|
+   |  True  |  True  |  True  |
+   |  True  |  False |  True  |
+   |  False |  True  |  True  |
+   |  False |  False |  False |
+   ----------------------------
+
+3. Snel beredeneren.
+   Wanneer we kijken naar de Or truth tabel vallen twee dingen op.
+       1. Wanneer de eerste input 'True' is, is de output gelijk aan de eerste input.
+       2. Wanneer de eerste input 'False' is, is de output gelijk aan de tweede input.

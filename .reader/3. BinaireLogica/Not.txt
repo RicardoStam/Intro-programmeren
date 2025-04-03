@@ -1,0 +1,11 @@
+1. Wat is een not (operator)?
+    De not (Nld: niet) operator heeft als input één boolean. In tegenstelling tot de and en or gate voert de not
+    operator geen vergelijking uit, maar een vervorming en geeft de tegenovergestelde waarde terug van de input.
+
+2. Not truth tabel.
+    -------------------
+    |Input 1 | Output |
+    |--------|--------|
+    |  True  |  False |
+    |  False |  True  |
+    -------------------

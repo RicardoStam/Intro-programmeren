@@ -1,0 +1,41 @@
+
+1. Wat is een operator?
+   Een operator is een functie, vaak aangegeven met een symbool, die een bepaalde bewerking uitvoert op één of meer
+   "operands". In de wiskunde zien we ditzelfde, neem als voorbeeld het '1+2'. De '1' en de '2' zijn in dit geval de
+   operands, de operator is het "+" teken. De operator voert de volgende bewerking uit: "tel de linker operand op bij
+   de rechter operand".
+
+   De operators die gebruikt worden tijdens het programmeren stellen ons, net als in de wiskunde, ook in staat om
+   'complexe' opdrachten te maken, dit is te zien in het voorbeeld.
+
+   Voorbeeld:
+       'Simpele' opdracht
+           ```python
+               x = 5
+               y = 2
+
+               z = x + y  # Optellen van x en y, resultaat is 7
+           ```
+       'Complexe' opdracht
+           ```python
+               x = 5
+               y = 2
+
+               z = x * 2 + y * 2  # Vermenigvuldigen en optellen
+               # Stap 1: x * 2 = 10, y * 2 = 4
+               # Stap 2: 10 + 4 = 14
+           ```
+
+2. Wat is een expressie?
+   Een expressie is een combinatie van variabelen, functies, waarden, constanten, en operatoren die terug te herleiden
+   zijn naar één waarde. Zoals in het voorbeeld in onderdeel 1 te zien is, worden de operatoren '+' en '*' gebruikt om
+   meerdere waarden en variabelen terug te herleiden naar één waarde.
+
+   De operator '*' heeft, zoals in de wiskunde, voorrang boven '+', en dus worden de volgende stappen uitgevoerd:
+
+       1. z = (x * 2) + y * 2
+       2. z = (5 * 2) + y * 2
+       3. z = 10 + (y * 2)
+       4. z = 10 + (2 * 2)
+       5. z = (10 + 4)
+       6. z = 14

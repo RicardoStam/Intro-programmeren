@@ -1,0 +1,60 @@
+1. Wat is een while-loop?
+   Een while-loop is een herhalingsstructuur die gebruikt wordt om een blok code meerdere keren uit te voeren, zolang een bepaalde voorwaarde (`condition`) waar (`True`) is. Dit is handig voor taken die moeten blijven herhalen tot een specifieke gebeurtenis plaatsvindt, zoals het verwerken van gebruikersinput of het aftellen van een timer.
+
+   Voorbeeld van de basisstructuur:
+       """
+       while voorwaarde:
+           uit te voeren code
+       """
+
+2. Werking van een while-loop
+   Een while-loop evalueert eerst de voorwaarde. Als deze waar is, wordt de code binnen de loop uitgevoerd. Na elke iteratie wordt de voorwaarde opnieuw gecontroleerd. Dit proces herhaalt zich tot de voorwaarde onwaar (`False`) wordt.
+
+   Voorbeeld met stappen:
+       """
+       teller = 0
+       while teller < 3:
+           print(teller)  # Output: 0, 1, 2
+           teller = teller + 1
+       """
+
+3. Belangrijke aandachtspunten
+   Bij het werken met while-loops zijn er valkuilen waar je op moet letten. Een veelgemaakte fout is het vergeten aanpassen van de voorwaarde, wat kan leiden tot een oneindige loop. Daarnaast is het belangrijk om te begrijpen wanneer een while-loop nuttig is vergeleken met andere herhalingsstructuren, zoals een for-loop.
+
+   Voorbeeld van een oneindige loop:
+       """
+       while True:
+           print("Dit stopt nooit!")
+       """
+
+4. Wanneer gebruik je een while-loop?
+   Een while-loop is ideaal in situaties waar het aantal benodigde herhalingen van tevoren niet bekend is. Denk aan taken zoals het verwerken van gebruikersinput tot een specifiek commando wordt gegeven, of het blijven lezen van data tot een bestand volledig is verwerkt.
+
+   Voorbeeld met gebruikersinteractie:
+       """
+       actief = True
+       while actief:
+           keuze = input("Typ 'stop' om te eindigen: ")
+           if keuze == "stop":
+               actief = False
+       """
+
+5. Praktijkvoorbeeld: Indexen van een array overlopen
+   In dit voorbeeld gebruiken we een while-loop om door de indexen van een array te lopen en elk element met 1 te verhogen. Dit laat zien hoe je een loop kunt combineren met array-manipulatie.
+
+   Uitgewerkt voorbeeld:
+       """
+       cijfers = [10, 20, 30]  # Startarray
+       teller = 0
+
+       while teller < len(cijfers):
+           cijfers[teller] = 1 + cijfers[teller] # Verhoog elk element met 1
+           teller = teller + 1
+
+       print(cijfers)  # Resultaat: [11, 21, 31]
+       """
+
+   Toelichting:
+   - De loop loopt via de indexen (0 t/m 2) van de array.
+   - Elk element wordt aangepast met `cijfers[teller] += 1`.
+   - De `teller` wordt na elke iteratie verhoogd om de volgende index te bereiken.

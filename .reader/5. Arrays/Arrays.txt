@@ -1,0 +1,98 @@
+1. Wat is een array?
+    Een array is een 'complex' data type en kan gezien worden als een verzameling, doorgaans opgebouwd uit elementen van
+    één data type. Verzamelingen worden relatief veel toegepast tijdens het schrijven van code. De data elementen die we
+    in een array plaatsen kunnen worden opgeroepen door de index (positie) van het element te gebruiken.
+
+    Voorbeeld:
+        Een lege array.
+            """
+                Empty = []
+            """
+
+        Een array met data.
+            """
+                NotEmpty = [1, 2, 3, 4, 5]
+            """
+
+2. Index
+    Een index is een getal wat de positie binnen een verzameling aangeeft. De index van een array begint bij 0 en
+    verhoogd zichzelf met 1 voor elk nieuw element. Dit betekend dan ook dat de grootst mogelijk index gelijk is aan:
+     "het aantal elementen van een array - 1"
+
+    Dit betekend dat in een verzameling:
+        het eerste element heeft index 0;
+        het tweede element heeft index 1;
+        etc.
+
+    Voorbeeld:
+        Een array met de index als data elementen.
+            """
+                vijfElementen = [0,1,2,3,4]
+            """
+
+    2.1 Index gebruiken om data op te halen
+        De data elementen van een verzameling hebben dus een eigen index binnen de verzameling. Om de data op te roepen
+        maken we gebruik van de index. Dit ziet er als volgt uit: "<arrayVariabele>[<index>]". In het voorbeeld is hier
+        een concreet voorbeeld van gegeven waarbij data elementen worden opgeslagen in variabele.
+
+        Voorbeeld:
+            Data ophalen doormiddel van een index.
+                """
+                    data = [1,2]
+
+                    dataOpIndex0 = data[0]
+                    dataOpIndex1 = data[1]
+                """
+
+    2.2 Index gebruiken om data te overschrijven
+        Om een data element uit een verzameling een nieuwe waarde te geven maken we, wederom, gebruik van de index.
+        Het overschrijven van deze data elementen verloopt in grote lijnen net zoals we variabele overschrijven en ziet
+        er als volgt uit: "<arrayVariabele>[<index>] = <data>". In het voorbeeld is hier een concreet voorbeeld van
+        gegeven.
+
+        Voorbeeld:
+            Data elemtenten overschrijven van een array.
+                """
+                    data =[1,2]
+
+                    data[0] = 3
+                    data[1] = data[0] + 1
+                """
+
+3. Belangrijke methodes van een array
+    Methodes zijn instructies die onderdeel zijn van een "complex" data type, het kan gezien worden als gedrag dat
+    dit "complexe" data type kan uitvoeren. Om een methode aan te roepen moet er eerst een "complex" data type in
+    een variabele worden geplaatst. Nu is het mogelijk om via de variabele een methode (gedrag) van het "complexe"
+    data type aan te roepen.
+
+    Om een methode uit te voeren geven we de naam van de variabele op gevolgd door een punt met daaraan vast de
+    naam van de methode gevolgd door haakje openen en sluiten. Methodes vereisen vaak, maar niet altijd, één of meerdere
+    inputs. Deze inputs heten "parameters" en worden gescheiden door een komma.
+
+    Voorbeeld:
+        Methode aanroep abstract.
+            """
+                <variabele> = <Complex data type>
+
+                <variabele>.<methodeNaam>(<parameter1>, <parameterN>)
+            """
+
+    3.1 De methodes
+        <arrayVariabele>.append(<data>)
+            (Opdracht) Met ".append(<data>)" wordt er een nieuw data element toegevoegd aan het eind van de array wat de
+                       waarde van "<data>" bevat.
+
+        <arrayVariabele>.remove(<data>)
+            (Opdracht) Met ".remove(<data>)" wordt er een data element verwijdert met de waarde van "<data>".
+
+        Voorbeeld:
+            """
+                array = []
+
+                array.append(1)
+                array.append(2)
+                print(array)
+
+                array.remove(2)
+                print(array)
+            """

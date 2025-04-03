@@ -1,0 +1,70 @@
+1. Wat is een array?
+    Een array is een 'complex' data type en kan gezien worden als een geordende verzameling, meestal bestaande uit elementen van
+    één data type. Arrays worden veel gebruikt in programmeercode. De elementen in een array kunnen worden opgevraagd via hun index (positie).
+
+    Voorbeeld:
+        Een lege array.
+            """
+                empty = []
+            """
+
+        Een array met data.
+            """
+                numbers = [1, 2, 3, 4, 5]
+            """
+
+2. Index
+    Een index is een getal dat de positie van een element binnen een array aangeeft. De index begint bij 0 (*zero-based indexing*) en
+    verhoogt met 1 voor elk volgend element. De hoogst mogelijke index is altijd:
+    "(aantal elementen in de array - 1)".
+
+    Dit betekent dat:
+        - Het eerste element index 0 heeft
+        - Het tweede element index 1 heeft
+        - Enzovoort
+
+    Voorbeeld:
+        Een array waar de elementen overeenkomen met hun index:
+            """
+                index_array = [0, 1, 2, 3, 4]
+            """
+
+    2.1 Index gebruiken om data op te halen
+        Elementen worden opgevraagd met: <array>[<index>]. Voorbeeld:
+            """
+                data = [1, 2]
+
+                waarde_op_0 = data[0]  # Resultaat: 1
+                waarde_op_1 = data[1]  # Resultaat: 2
+            """
+
+    2.2 Index gebruiken om data te overschrijven
+        Elementen worden overschreven met: <array>[<index>] = <nieuwe_waarde>. Voorbeeld:
+            """
+                data = [1, 2]
+
+                data[0] = 3       # Nieuwe array: [3, 2]
+                data[1] = data[0] # Nieuwe array: [3, 3]
+            """
+
+3. Belangrijke methodes van een array
+    Methodes zijn functies die specifiek zijn voor een data type. Ze worden aangeroepen via de syntax: <variabele>.<methode>(<input>).
+
+    3.1 Toevoegen aan einde
+        .append(<data>)
+            Voegt een element toe aan het einde van de array.
+            Voorbeeld:
+                """
+                    array = []
+                    array.append(1)  # [1]
+                    array.append(2)  # [1, 2]
+                """
+
+    3.2 Verwijderen op waarde
+        .remove(<data>)
+            Verwijdert het *eerste* element met de opgegeven waarde.
+            Voorbeeld:
+                """
+                    array = [1, 2]
+                    array.remove(2)  # [1]
+                """
