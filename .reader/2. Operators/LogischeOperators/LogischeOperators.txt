@@ -24,87 +24,35 @@
        Vergelijkingen vereisen een operand aan zowel de linker- als de rechterkant van de operator.
 
        == - Vergelijking; doordat het '=' symbool al in gebruik is voor het toekennen van variabelen, gebruiken we het
-            dubbele is-gelijk-aan-teken om een vergelijking uit te voeren. Wanneer de elementen aan beide kanten
+            dubbele is gelijk aan teken om een vergelijking uit te voeren. Wanneer de elementen aan beide kanten
             van de operator identiek zijn, wordt True teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = 5
-               b = 5
-               resultaat = a == b  # True
-           ```
 
        >  - Groter; Wanneer het linker element groter is dan het rechter element, wordt True teruggegeven, anders False.
        Voorbeeld:
-           ```
-               a = 10
-               b = 5
-               resultaat = a > b  # True
-           ```
 
        >= - Gelijk of groter; Wanneer het linker element groter dan of gelijk is aan het rechter element,
             wordt True teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = 5
-               b = 5
-               resultaat = a >= b  # True
-           ```
 
        <  - Kleiner; Wanneer het linker element kleiner is dan het rechter element, wordt True teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = 3
-               b = 7
-               resultaat = a < b  # True
-           ```
 
        <= - Gelijk of kleiner; Wanneer het linker element kleiner dan of gelijk is aan het rechter element,
             wordt True teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = 4
-               b = 4
-               resultaat = a <= b  # True
-           ```
 
        != - Niet gelijk; Wanneer beide elementen niet identiek zijn, wordt True teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = 10
-               b = 5
-               resultaat = a != b  # True
-           ```
 
    2.2. Logische operatoren
        Logische operatoren werken met booleans als input en geven een boolean waarde terug.
 
        and - En; de and-operator vereist twee booleans als input. Wanneer beide booleans True zijn, wordt True
              teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = True
-               b = False
-               resultaat = a and b  # False
-           ```
 
        or - Of; de or-operator vereist twee booleans als input. Wanneer minimaal één van de twee booleans True is,
             wordt True teruggegeven, anders False.
-       Voorbeeld:
-           ```
-               a = True
-               b = False
-               resultaat = a or b  # True
-           ```
 
    2.3. Vervormen
        Vervormingen vereisen slechts één operand aan de rechterkant van de operator.
 
        not - Niet; de not-operator geeft de tegenovergestelde waarde terug van de input-boolean.
-       Voorbeeld:
-           ```
-               a = True
-               resultaat = not a  # False
-           ```
 
-   *In 3. Binaire logica zullen de and, or en not operators verder behandeld worden.*
+   In 3. Binaire logica zullen de and, or en not operators verder behandeld worden.
 

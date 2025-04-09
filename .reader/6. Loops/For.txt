@@ -1,62 +1,44 @@
 1. Wat is een for-loop?
-Een for-loop is een programmeerconstruct dat wordt gebruikt om een specifiek codeblok meerdere keren uit te voeren, meestal om door een verzameling elementen (zoals een array) te itereren. In tegenstelling tot een while-loop, waar het aantal herhalingen afhangt van een voorwaarde, werkt een for-loop met een vooraf bepaalde reeks of verzameling. Dit maakt het ideaal voor taken waarbij alle elementen van een array moeten worden verwerkt.
+    Een for-loop is een programmeerconstruct dat wordt gebruikt om een specifiek codeblok meerdere keren uit te voeren,
+    meestal om door een verzameling elementen (zoals een array) te itereren. In tegenstelling tot een while-loop, waar het
+    aantal herhalingen afhangt van een voorwaarde, werkt een for-loop met een vooraf bepaalde reeks of verzameling. Dit
+    maakt het ideaal voor taken waarbij alle elementen van een array moeten worden verwerkt.
 
-Voorbeeld van basisgebruik:
-    """
-    namen = ["Anna", "Bram", "Chris"]
-    for naam in namen:
-        print(f"Hallo, {naam}!")
-    """
+    Voorbeeld:
+        printen van een lijst met namen
+            ```
+                namen = ["Anna", "Bram", "Chris"]
+                for naam in namen:
+                    print(naam)
+            ```
 
 2. Hoe werkt een for-loop?
-Een for-loop doorloopt automatisch elk element in een verzameling. De loop begint bij het eerste element en blijft herhalen tot alle elementen zijn verwerkt. Hierbij is geen handmatig indexbeheer nodig – de loop regelt dit zelf.
+    Een for-loop doorloopt automatisch elk element in een verzameling. De loop begint bij het eerste element en blijft
+    herhalen tot alle elementen zijn verwerkt. Hierbij is geen handmatig indexbeheer nodig – de loop regelt dit zelf.
 
-Stapsgewijze uitvoering:
-    """
-    getallen = [10, 20, 30]
-    totaal = 0
+    Voorbeeld:
+        Berekenen van een totaal
+            ```
+                getallen = [10, 20, 30]
+                totaal = 0
 
-    for getal in getallen:
-        totaal += getal  # Totaal wordt 10 → 30 → 60
-    """
+                for getal in getallen:
+                    totaal = totaal + getal
+            ```
 
 3. Wanneer gebruik je een for-loop?
-Een for-loop is bij uitstek geschikt voor:
-- Het verwerken van alle elementen in een array
-- Taken met een bekend aantal herhalingen
-- Bewerkingen waarbij de index niet expliciet nodig is
+    Een for-loop is bij uitstek geschikt voor:
+    - Het verwerken van alle elementen in een array
+    - Taken met een bekend aantal herhalingen
+    - Bewerkingen waarbij de index niet expliciet nodig is
 
-Voorbeeld met array-transformatie:
-    """
-    celsius = [0, 15, 30]
-    fahrenheit = []
+    Voorbeeld:
+        array-transformatie:
+            ```
+                celsius = [0, 15, 30]
+                fahrenheit = []
 
-    for temp in celsius:
-        fahr = temp * 9/5 + 32  # Omzetten naar Fahrenheit
-        fahrenheit.append(fahr)  # Resultaat: [32.0, 59.0, 86.0]
-    """
-
-4. Indexen gebruiken in een for-loop
-Soms is de index van elementen nodig. Hiervoor kan `enumerate()` worden gebruikt:
-    """
-    producten = ["Appel", "Banaan", "Citroen"]
-
-    for index, product in enumerate(producten):
-        print(f"Product {index + 1}: {product}")
-        # Output:
-        # Product 1: Appel
-        # Product 2: Banaan
-        # Product 3: Citroen
-    """
-
-5. Veelgemaakte fouten
-- **Vergeten dubbele punten**: Een `:` na de loop-verklaring is verplicht.
-- **Verkeerde inspringing**: Code binnen de loop moet consistent inspringen (4 spaties).
-- **Aanpassen van de array tijdens iteratie**: Dit kan onverwachte resultaten veroorzaken.
-
-Voorbeeld van een foutieve aanpak:
-    """
-    getallen = [1, 2, 3]
-    for getal in getallen:
-        getallen.append(getal * 2)  # ❌ Creëert een oneindige loop!
-    """
+                for temp in celsius:
+                    fahr = temp * 9/5 + 32
+                    fahrenheit.append(fahr)
+            ```

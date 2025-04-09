@@ -7,12 +7,12 @@
 
        Voorbeeld:
            if/else abstract.
-               """
+               ```
                    if(<Conditie>):
                        <If code blok>
                    else:
                        <Else code blok>
-               """
+               ```
 
    Let op: Alleen de if of else code wordt uitgevoerd!
 
@@ -25,28 +25,30 @@
 
    Voorbeeld:
        If statements waarbij een prijs wordt bepaald op basis van een variabele genaamd "leeftijd".
-           """
+           ```
                if(leeftijd < 65):
                    prijs = 15
                else:
                    prijs = 12
-           """
+           ```
 
 3. Het gebruik van een enkel if statement
-   Soms is het niet nodig om een volledige if/else structuur te gebruiken, maar volstaat het om alleen een enkele if te gebruiken. Dit is het geval wanneer we enkel een actie willen uitvoeren als aan een bepaalde conditie wordt voldaan. Een enkel if statement is een optionele stap die uitgevoerd kan worden wanneer de conditie waar is.
+   Soms is het niet nodig om een volledige if/else structuur te gebruiken, maar volstaat het om alleen een enkele if te
+   gebruiken. Dit is het geval wanneer we enkel een actie willen uitvoeren als aan een bepaalde conditie wordt voldaan.
+   Een enkel if statement is een optionele stap die uitgevoerd kan worden wanneer de conditie waar is.
 
    Voorbeeld:
        Enkel if abstract.
-           """
+           ```
                if(<Conditie>):
                    <Code die wordt uitgevoerd wanneer conditie gelijk is aan True>
-           """
+           ```
 
        Enkel if concreet.
-           """
+           ```
                if(leeftijd < 18):
                    print("Je bent minderjarig.")
-           """
+           ```
 
 4. Het "nesten" van if/else statements
    Voor veel programma's is het nodig om 'complexe' keuzes te maken, dit kunnen we bereiken door gebruik te maken van
@@ -55,7 +57,7 @@
 
    Voorbeeld:
         Nested if/else abstract.
-            """
+            ```
                if(<Conditie1>):
                    <Code die wordt uitgevoerd wanneer conditie1 gelijk is aan True en voordat onderstaande if/else wordt uitgevoerd.>
                    if(<conditie2>):
@@ -70,10 +72,10 @@
                    else:
                        <Code die wordt uitgevoerd wanneer conditie1 gelijk is aan False en conditie3 gelijk is aan False.>
                    <Code die wordt uitgevoerd wanneer conditie1 gelijk is aan False en voordat onderstaande if/else wordt uitgevoerd.>
-            """
+            ```
 
         Nested if/else concreet.
-            """
+            ```
                if(leeftijd<65):
                    if(kortingsKaart):
                       prijs = 10
@@ -85,4 +87,4 @@
                    else:
                        prijs = 12
                print(prijs)
-            """
+            ```

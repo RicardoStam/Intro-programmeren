@@ -10,11 +10,11 @@
 
    Voorbeeld:
        Variabelen declareren.
-           """
+           ```
                Leeftijd = 19
                geslacht = "Man"
                _gewicht = 75.4
-           """
+           ```
 
    2.1. Het oproepen en gebruiken van variabelen.
        Doordat we onze data labels hebben gegeven kunnen we nu deze labels gebruiken om de data aan te roepen die
@@ -25,14 +25,14 @@
 
        Voorbeeld:
            Variabelen declareren en printen.
-               """
+               ```
                    x = 2
                    y = 4
 
                    print(x)
                    print(y)
                    print(x+y)
-               """
+               ```
 
    2.2. De leesbaarheid van jouw code.
        De geschreven code 'moet' een omschrijving zijn van een probleem wat wordt opgelost door jou code. Zoals in
@@ -43,19 +43,19 @@
 
        voorbeeld:
            Abstracte code:
-               """
+               ```
                    x=5
                    z=1
 
                    y = x*z
-               """
+               ```
            Concrete code:
-               """
+               ```
                    Appels = 5
                    PrijsPerAppel = 1
 
                    TotaalPrijs = Appels * PrijsPerAppel
-               """
+               ```
 
        Ondanks het feit dat we concrete code willen schrijven zullen we tijdens de lessen veel, niet altijd, gebruik
        maken van een abstracte manier van code schrijven. Dit komt doordat de kennis die we opdoen op van alles

@@ -8,62 +8,19 @@
    Mathematische operatoren verwachten zowel een linker- als een rechteroperand.
 
    +  - Optellen.
-       Voorbeeld:
-           ```
-               a = 5
-               b = 3
-               resultaat = a + b  # 8
-           ```
 
    -  - Aftrekken.
-       Voorbeeld:
-           ```
-               a = 10
-               b = 4
-               resultaat = a - b  # 6
-           ```
 
    *  - Vermenigvuldigen.
-       Voorbeeld:
-           ```
-               a = 7
-               b = 6
-               resultaat = a * b  # 42
-           ```
 
    /  - Delen (float); bekend uit de wiskunde.
        Let op: het antwoord dat wordt teruggegeven is een float en wordt niet afgerond.
-       Voorbeeld:
-           ```
-               a = 10
-               b = 4
-               resultaat = a / b  # 2.5
-           ```
 
    %  - Modulo; bij het toepassen van de modulo-operator is het resultaat de restwaarde van de
        linkeroperand nadat de rechteroperand er zo vaak mogelijk in zijn geheel vanaf is getrokken.
-       Voorbeeld:
-           ```
-               a = 10
-               b = 3
-               resultaat = a % b  # 1
-           ```
 
    ** - Machtsverheffen; bekend uit de wiskunde.
-       Voorbeeld:
-           ```
-               a = 2
-               b = 3
-               resultaat = a ** b  # 8
-           ```
 
    // - Delen (int); bekend uit de wiskunde.
        Let op: het antwoord dat wordt teruggegeven is een int, waarbij het decimale deel wordt
        genegeerd. Als je een float als resultaat wilt, moet minimaal één van de operands een float zijn.
-       Voorbeeld:
-           ```
-               a = 10
-               b = 3
-               resultaat = a // b  # 3
-           ```
-
